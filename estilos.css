@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #000000, #2e3a42, #03275e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Delicious Handrawn', cursive;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  background-image: url("./banner.jpg");
+  background-size: contain;
+}
+
+h1 {
+  font-size: 10rem;
+  display: flex;
+  text-shadow: 0 0 15px #ffff00;
+  color: #00ffff;
+  animation: title 1s infinite;
+  text-align: center;
+
+}
+
+@keyframes title {
+  50% {
+    text-shadow: 0 0 15px #00ffff;
+    color: #ffff00;
+  }
+}
+
+hr {
+  width: 90%;
+  margin: 1rem;
+}
+
+main {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.finder-character,
+.finder-episode {
+  width: 90%;
+  max-width: 30rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  background-color: #1c272e;
+  padding: 0.5rem;
+  color: #ffff;
+  font-family: 'Delicious Handrawn', cursive;
+  margin-bottom: 0.5rem;
+}
+
+.search-button {
+  width: 90%;
+  max-width: 30rem;
+  padding: 0.5rem 7rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  background-color: #03275e;
+  color: #ffff;
+  cursor: pointer;
+  font-family: 'Delicious Handrawn', cursive;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.container-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-character,
+.card-episode {
+  width: 90%;
+  max-width: 20rem;
+  height: auto;
+  background-color: #ccc0df;
+  border: groove 5px #484444;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-character img,
+.card-episode img {
+  width: 100%;
+  height: auto;
+  max-height: 15rem;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.description-card {
+  text-align: center;
+}
+
+.description-card h2 {
+  color: #ffff00;
+  font-size: 1.5rem;
+}
+
+.description-card p {
+  color: #00ffff;
+  font-size: 1rem;
+}
+
+footer {
+  width: 100%;
+  height: 3rem;
+  background-color: #03275e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .finder-character,
+  .finder-episode {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .search-button {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .card-character,
+  .card-episode {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+/*Temporal*/
+img {
+  width: 30px;
+}
